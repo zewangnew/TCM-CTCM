@@ -30,3 +30,15 @@ There will be 8 maps in the output: pcc, ncc, pcc/ncc, rr_bin, rr_bin/nrr_bin, t
        m --  brain mask used to remove nonbrain voxels
        i -- input data
        o --  output file name
+
+There will be 10 maps in the output: pcc*100, ncc*100, pcc_md*100, ncc_md*100, max_avg_diagcc, loc_max_avg_diagcc, max_diagmean_len_pcc, loc_max_diagmean_len_pcc, sum_len_pcc, sum_len_ncc.
+       pcc -- mean positive cc
+       ncc -- mean negative cc
+       pcc_md -- mean postive cc in the main diagonal 
+       ncc_md -- mean negative cc in the main diagonal 
+       max_avg_diagcc -- maximal mean diagonal cc
+       max_avg_diagcc -- location of the diagonal where the maximal mean diagonal cc locates
+       max_diagmean_len_pcc -- maximal mean diagonal line segment length
+       loc_max_diagmean_len_pcc -- location of the diagonal where max_diagmean_len_pcc locates
+       sum_len_pcc -- sum of the line segment of the binarized positive cross correlation matrix
+       sum_len_ncc -- sum of the line segment of the binarized negative cross correlation matrix
