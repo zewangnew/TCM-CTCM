@@ -14,8 +14,15 @@ Usage:
        m --  brain mask used to remove nonbrain voxels
        i -- input data
        o --  output file name
+There will be 8 maps in the output: pcc, ncc, pcc/ncc, rr_bin, rr_bin/nrr_bin, tot_sum_pseglen, tot_sum_nseglen, tot_sum_pseglen/tot_sum_nseglen.
+       pcc -- mean positive cc
+       ncc -- mean negative cc
+       rr_bin -- mean rate of the thresholded positive cc.
+       nrr_bin -- mean rate of the thresholded negative cc.
+       tot_sum_pseglen -- sum of the line segment of the thresholded positive cc matrix diagonals
+       tot_sum_nseglen -- sum of the line segment of the thresholded negative cc matrix diagonals
        
-       ctcm -d 30 -r 0.3 -c 30 -roi roiimg.nii.gz -m brainmask.nii.gz -i datfile.nii.gz -o tcmfilename.nii.gz
+       ctcm -d 30 -r 0.3 -c 30 -roi roiimg.nii.gz -m brainmask.nii.gz -i datfile.nii.gz -o ctcmfilename.nii.gz
        d -- length of the embedding window
        r -- cut off for the correlation coefficient. correlation coefficient between two embedding vectors will be set to be 0 if the absolute is <=r
        c -- number of cpu cores to be used
