@@ -2,10 +2,8 @@
 Temporal coherence mapping and cross-regional temporal coherence mapping (cross-time functional connectivity).
 Please cite the following papers:
 
-Resting state fMRI-based temporal coherence mapping
-https://arxiv.org/abs/2109.00146                                                                          
-Cross-time functional connectivity analysis                     
-https://arxiv.org/abs/2109.00518
+1. Resting state fMRI-based temporal coherence mapping, https://arxiv.org/abs/2109.00146                                                                          
+2. Cross-time functional connectivity analysis,  https://arxiv.org/abs/2109.00518
 
 Usage: 
 
